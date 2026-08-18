@@ -137,6 +137,39 @@
       background: #ffffff !important; /* Màu của thanh tiến trình (trắng sáng) */
       transition-duration: 300ms !important;
     }
+/* VÙNG BẤM LINK HOTSPOT */
+    .hotspot-link {
+      position: absolute;
+      display: block;
+      border-radius: 6px;
+      z-index: 50;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0);
+    }
+
+    /* Hiệu ứng sáng lên khi di chuột vào */
+    .hotspot-link:hover {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Vị trí Email góc dưới bên trái */
+    .hotspot-email {
+      bottom: 10%;
+      left: 8%;
+      width: 28%;
+      height: 6%;
+    }
+
+    /* Vị trí LinkedIn góc dưới bên phải */
+    .hotspot-linkedin {
+      bottom: 10%;
+      right: 8%;
+      width: 28%;
+      height: 6%;
+    }
   </style>
 </head>
 <body>
@@ -327,8 +360,23 @@
       </div>
 
       <!-- Slide 36 -->
+<!-- Slide 36 -->
       <div class="swiper-slide">
         <img class="slide-img" src="Slide-36.jpg" alt="Slide 36">
+
+        <!-- Nút bấm Email (Góc dưới bên trái) -->
+        <a href="mailto:hoainam91lk@gmail.com" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="hotspot-link hotspot-email" 
+           title="Gửi Email tới Nam"></a>
+
+        <!-- Nút bấm LinkedIn (Góc dưới bên phải) -->
+        <a href="https://linkedin.com/in/hoainam91lk" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="hotspot-link hotspot-linkedin" 
+           title="Mở LinkedIn của Nam"></a>
       </div>
 
     </div>
